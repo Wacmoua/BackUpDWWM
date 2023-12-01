@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopUP</title>
+    <script type="text/javascript">
+      // function message(text) {
+      //   // vérifier que la page appelante existe toujours et qu’elle n’est pas fermée
+      //   if (window.opener) {
+      //     // verifier que la page n’a pas été remplacée
+      //     if (window.opener.document.form1) {
+      //       window.opener.document.form1.choix.value = text;
+      //     }
+      //   } else {
+      //     alert("la fenetre principale n'est plus active");
+      //   }
+      // }
+
+      // function closeAuto() {
+      //   window.close();
+      // }
+      // setTimeout("closeAuto()", 5 * 1000);
+    </script>
+  </head>
+
+  <body>
+    <p>Ceci est un essai de popup</p>
+    <br /><br />
+    <p>Choisissez une option :</p>
+    <ul>
+      <li><a href="javascript:message('choix 1')">Choix 1</a></li>
+      <li><a href="javascript:message('choix 2')">Choix 2</a></li>
+    </ul>
+    <br />
+    <a href="javascript:window.close()">Fermer</a>
+    <script src="jspopup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gestion des fenêtres</title>
+  </head>
+  <body>
+    <h1>Gestion des fenêtres</h1>
+    <img
+      src="theofffiiice.gif"
+      alt="Cliquez pour ouvrir la fenêtre fille"
+      onclick="ouvrirPopup()"
+    /><br />
+
+    <button onclick="fermerMamanPopup()">Fermer la fenêtre mère</button><br />
+    <button onclick="fermerPopup()">Fermer la fenêtre fille</button><br />
+    <button onclick="bougerPopup()">Déplacer la fenêtre fille</button><br />
+    <button onclick="reduireFenetre()">Réduire la fenêtre fille</button><br />
+
+    <script>
+      let fenetrePopup = null;
+
+      function ouvrirPopup() {
+        if (fenetrePopup == null || fenetrePopup.closed) {
+          fenetrePopup = window.open(
+            "popup2.html",
+            "popUpWindow",
+            "width=400, height=300, top=200, left=200"
+          );
+        }
+      }
+
+      function fermerPopup() {
+        if (fenetrePopup && !fenetrePopup.closed) {
+          fenetrePopup.close();
+        }
+      }
+
+      function bougerPopup() {
+        if (fenetrePopup && !fenetrePopup.closed) {
+          fenetrePopup.focus();
+          fenetrePopup.moveBy(500, 150);
+        }
+      }
+
+      function reduireFenetre() {
+        if (fenetrePopup && !fenetrePopup.closed) {
+          fenetrePopup.resizeTo(200, 400);
+        }
+      }
+
+      function fermerMamanPopup() {
+        if (window.opener && !window.opener.closed) {
+          window.opener.close();
+        }
+      }
+
+      function fermerBebePopup() {
+        self.close();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+</head>
+
+<body>
+
+
+    <h1> Page d'inscription'</h1>
+
+    <form action="inscription_verification.php" method="get" name="connexion_Formulaire">
+
+        <p> Votre pseudo : </p>
+        <input type="text" name="login_choisi" id="login">
+
+        <p> Votre mot de passe : </p>
+        <input type="password" name="pass_choisi" id="password">
+        <br>
+        <br>
+        <p> Confirmer votre mot de passe : </p>
+        <input type="password" name="pass_confirm" id="password_confirm">
+        <br>
+        <br>
+        <p> Votre email :</p>
+        <input type="email" name="email_choisi" id="email">
+        <br>
+        <br>
+        <p> Votre nom : </p>
+        <input type="text" name="nom" id="name">
+        <br>
+        <br>
+        <p> Votre prénom : </p>
+        <input type="text" name="prenom" id="firstname">
+        <br>
+        <br>
+        <p> Votre date de naissance : </p>
+        <input type="date" name="date_naissance" id="birthday">
+        <br>
+        <br>
+        <p> Votre sexe : </p>
+        <input type="radio" name="sex" value="Homme" id="Homme">
+        <label for="Homme">Homme</label>
+        <input type="radio" name="sex" value="Femme" id="Femme">
+        <label for="Femme">Femme</label>
+
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="S'inscrire">
+        <input type="reset" value=" Vider les champs">
+    </form>
+    <p>
+        <a href="Index.html"> Retour Accueil</a>
+    </p>
+</body>
+
+</html>

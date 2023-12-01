@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welkome das auto</h1>
+    <div class="flex">
+      <div class="article" onclick="afficher()">
+        <img class="voiture" src="tutu.jpg" alt="" />
+      </div>
+      <div class="article" onclick="afficher()">
+        <img class="voiture" src="tututu.webp" alt="" />
+      </div>
+      <div class="article" onclick="afficher()">
+        <img class="voiture" src="tutututu.jpg" alt="" />
+      </div>
+    </div>
+    <div class="bouton">
+      <h1>Dark Mode Switch</h1>
+      <label class="toggle-btn" onclick="toggleDarkMode()">
+        <input type="checkbox" id="dark-mode-toggle" />
+      </label>
+    </div>
+    <div class="modal displayNone" id="maModal">
+      <div class="closed"></div>
+      <p class="close" onclick="masquer()">X</p>
+      <img class="imgmodal p15" src="tutu.jpg" alt="" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

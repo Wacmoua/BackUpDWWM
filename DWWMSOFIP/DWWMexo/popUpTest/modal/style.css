@@ -1,0 +1,93 @@
+.article {
+    border: 1px solid black;
+    color: aqua;
+}
+
+.voiture {
+    width: 80%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal {
+    background-color: aquamarine;
+}
+
+.imgmodal {
+    width: 50%;
+}
+
+.p15 {
+    padding: 15px;
+}
+.displayNone {
+    display: none;
+}
+
+p {
+    text-align: center;
+   
+}
+
+.closed {
+    display: flex;
+    justify-content: end
+}
+
+.close {
+   width: 20px;
+   height: 20px;
+   border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.toggle-btn {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc9c9;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #eee6e6;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dark-mode .toggle-btn::after {
+    transform: translateX(30px);
+}
+
+input {
+    display: none;
+}
